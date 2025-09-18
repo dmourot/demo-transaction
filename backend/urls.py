@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from accounts.api import api
+from accounts.api import api as accounts_api
+from transactions.api import api as transactions_api
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', api.urls),
+    path('api/v1/', accounts_api.urls),
+    path('api/v1/', transactions_api.urls),
 ]
 
 # Serve media files in development
