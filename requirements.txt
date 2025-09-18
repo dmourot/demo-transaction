@@ -5,3 +5,4 @@ dj-database-url==2.2.0
 Pillow==11.3.0
 python-dateutil==2.9.0.post0
 django-ninja==1.4.3
+plotly==6.3.0
